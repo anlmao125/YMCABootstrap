@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YMCA of Honolulu Clone</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        />
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- Top Navbar -->
+        <nav class="navbar bg-white py-3">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                
+                <!-- YMCA Logo -->
+                <a class="navbar-brand" href="#">
+                <img src="images/ymca-logo.png" alt="YMCA Logo" height="60" />
+                </a>
+
+                <!-- Search Bar -->
+                <form class="d-flex flex-grow-1 mx-1" role="search">
+                <input class="form-control rounded-pill px-4" type="search" placeholder="Search" aria-label="Search" style="background-color: lightgray;"/>
+                </form>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-2">
+                    <button class="btn px-4 fw-bold text-white" style="background-color: #c6168d ;">DONATE</button>
+                    <button class="btn btn-purple text-white px-4 fw-bold" style="background-color: #8e24aa;">JOIN</button>
+                    <button class="btn text-white px-4 fw-bold" style="background-color: #5e35b1;">JOBS – $500 BONUS</button>
+                    <button class="btn btn-outline-primary px-4 fw-bold" style="border-color: #5e35b1; color: #5e35b1;">REGISTER</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Black Section Navbar -->
+        <nav class="bg-dark py-2">
+            <div class="container d-flex justify-content-center gap-4">
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">YMCA of Honolulu</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Membership</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Schedules</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Programs</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Swimming</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Locations</a>
+                <a href="#" class="text-white text-uppercase fw-bold text-decoration-none">Donate & Volunteer</a>
+            </div>
+        </nav>
+
+        <div class="position-relative" style="background-color: #5e35b1;">
+            <!-- The purple angled background -->
+            <div class="angled-bg position-absolute top-0 start-0 w-100 h-100"></div>
+
+            <!-- The content over it (use Bootstrap grid as usual) -->
+            <div class="container position-relative py-5 text-white">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-start">
+                        <h2 class="fw-bold text-uppercase text-purple">Friends. Fitness. Fun.</h2>
+                        <p class="lead text-black">
+                            Y membership is not only a great way to stay active. <br>
+                            The Y is a great resource for meeting new friends <br>
+                            and having fun with family. 
+                        </p>
+                        <button class="btn btn-lg" style="background-color: #c50082; color: white;">
+                        JOIN
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Image Section -->
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <div class="position-relative" style="width: 600px; height: 350px;">
+                                <!-- Center circle (on top) -->
+                                <img src="images/ymca-circle-2.jpg" alt="Middle Circle"
+                                class="rounded-circle position-absolute"
+                                style="width: 300px; height: 300px; object-fit: cover; top: -40px; left: 100px; z-index: 3;">
+
+                                <!-- Left circle (aligned lower left) -->
+                                <img src="images/ymca-circle-1.jpg" alt="Left Circle"
+                                class="rounded-circle position-absolute"
+                                style="width: 300px; height: 300px; object-fit: cover; top:50px; left: -75px; z-index: 2;">
+
+                                <!-- Right circle (aligned lower right) -->
+                                <img src="images/ymca-circle-3.jpg" alt="Right Circle"
+                                class="rounded-circle position-absolute"
+                                style="width: 300px; height: 300px; object-fit: cover; top: 50px; left: 300px; z-index: 1;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light py-4">
+            <div class="container">
+                <div class="row g-3 justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-pencil-square fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">Registration & Reservation</div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-calendar-event fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">See Schedules</div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-heart-fill fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">Donate</div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-hand-index-thumb fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">Volunteer</div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-hand-index fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">Join the Y</div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="text-center bg-white rounded shadow-sm p-3 h-100">
+                            <i class="bi bi-person fs-1 text-purple"></i>
+                            <div class="mt-2 small fw-semibold">Manage Membership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/water-safety.jpg" class="card-img-top" alt="Water Safety">
+                        <div class="card-body">
+                            <h5 class="card-title text-purple fw-bold text-uppercase small">
+                                Free Safety Around Water Classes, Ages 5–15
+                            </h5>
+                            <p class="card-text small">
+                                Thank you for your interest. We’re currently at full capacity for the program.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-purple w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/summer-bucket.jpg" class="card-img-top" alt="Summer Bucket List">
+                        <div class="card-body">
+                            <h5 class="card-title text-purple fw-bold text-uppercase small">
+                                Summer Bucket List
+                            </h5>
+                            <p class="card-text small">
+                                Join the free challenge from June 1–July 31! Complete at least 20 activities for a chance to win a $2000 grand prize.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-purple w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="images/summer-fun.jpg" class="card-img-top" alt="Summer Fun">
+                        <div class="card-body">
+                            <h5 class="card-title text-purple fw-bold text-uppercase small">
+                                Summer Fun for Everyone!
+                            </h5>
+                            <p class="card-text small">
+                                Day & Specialty Camps, Swim Lessons, Family Camp Staycations & More! Financial aid available!
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-purple w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white pt-4 pb-3">
+            <div class="container">
+                <!-- Contact Info & Socials -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="fw-bold mb-1">YMCA of Honolulu Metropolitan Office</p>
+                        <p class="mb-1">1441 Pali Highway Honolulu, HI 96813</p>
+                        <p class="mb-1">
+                        Phone: (808) 531–YMCA (9622) • Fax: (808) 533–1286 • Email:
+                        <a href="mailto:info@ymcahonolulu.org" class="text-white text-decoration-underline">info@ymcahonolulu.org</a>
+                        </p>
+                        <p class="mb-1">
+                        Service Center: (808) 678–4296, Monday to Friday, 8am to 5pm
+                        </p>
+                        <p class="mb-3">Fed ID: 99–0073533 • State ID: GE–102–354–1248–01</p>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="col-md-4 text-md-end text-center mb-3">
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <hr class="border-light">
+
+                <!-- Footer Navigation -->
+                <div class="row text-center fw-bold mb-3">
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">ABOUT</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">FINANCIAL AID</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">JOBS</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">CONTACT</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">REGISTER/SIGN IN</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-white text-decoration-none">PRIVACY POLICY</a>
+                    </div>
+                </div>
+
+                <hr class="border-light">
+
+                <!-- Copyright & Logos -->
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3 text-center text-md-start">
+                        <small>© 2024 YMCA of Honolulu</small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <img src="images/unitedway.png" alt="United Way" style="height: 50px;" class="me-3">
+                        <img src="images/charitynav.png" alt="Charity Navigator" style="height: 50px;">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

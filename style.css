@@ -1,0 +1,20 @@
+.angled-bg {
+  background-color: white;
+  clip-path: polygon(0% 0, 40% 0, 47.5% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.text-purple {
+  color: #5f259f !important;
+}
+
+.btn-purple {
+  background-color: #a50082;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-purple:hover {
+  background-color: #87006a;
+  color: white;
+}

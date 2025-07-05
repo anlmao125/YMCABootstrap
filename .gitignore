@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# VSCode settings
+.vscode/
+
+# Build outputs
+dist/
+*.log
+
+# Optional: ignore compiled JS if you're using TS
+*.js
+*.map
+
